@@ -790,6 +790,8 @@ void AboutDialog::copyToClipboard()
 
     QClipboard* cb = QApplication::clipboard();
     cb->setText(data);
+    
+    ui->copyButton->setText(QString::fromStdString("copied"));
 }
 
 // ----------------------------------------------------------------------------
